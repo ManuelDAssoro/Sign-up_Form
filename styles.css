@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf') format('woff2'),
+         url('Norse-Bold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+main{
+    margin-left: 12.5vw;
+    height: 100vh;
+    width: 75vw;
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+#leftSideContainer{
+    flex:1.15;
+    min-width: 300px;
+    display: flex;
+}
+
+#rightSideContainer{
+    flex: 1;
+    flex-grow: 2;
+    min-width: 300px;
+    height:100vh;
+    background-color:white;
+    border: 2px red solid;  
+}
+
+#imageContainer{
+    flex-grow: 1;
+    height:100vh;
+    background-image: url("./images/nature-4785780.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logoSection{
+    margin-top: 24vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 17vh;
+    max-height: 17vh;
+}   
+
+#logoContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    height:8rem;
+}
+
+#logoText{
+    font-family: 'Norse-Bold', sans-serif;
+    color: white;
+    font-size: 6rem;
+}
+
+#imageContainer a{
+    color: white;
+    margin-top: 55vh;
+    text-align: center;
+    width: 100%;
+}
+
+a:visited{
+    color: white;
+}
+
+#header, #formContainer, #buttonContainer{
+    border:2px solid yellow;
+    min-height: 33vh;
+    font-family: sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+}
+
+#textContainer{
+    margin-top: 15vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#textContainer p{
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-weight: bold;
+}
